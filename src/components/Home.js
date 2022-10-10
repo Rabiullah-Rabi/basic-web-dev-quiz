@@ -31,7 +31,14 @@ const Home = () => {
                             Here is some basic quiz for you to test your knowledge about webdevelopment. 
                     </p>
                 </div>
-                
+                <div>
+                    <Link
+                    to="statistics"
+                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-700 hover:bg-blue-500 focus:shadow-outline focus:outline-none"
+                    >
+                    Get started
+                    </Link>
+                </div>
                 </div>
             </div>
         </div>

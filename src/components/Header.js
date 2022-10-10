@@ -21,42 +21,32 @@ const Header = () => {
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                     <li>
                         <Link
-                        to="/"
+                        to="topics"
                         aria-label="Our product"
                         title="Our product"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                        Product
+                        Topics
                         </Link>
                     </li>
                     <li>
                         <Link
-                        to="/"
+                        to="statistics"
                         aria-label="Our product"
                         title="Our product"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                        Features
+                        Statistics
                         </Link>
                     </li>
                     <li>
                         <Link
-                        to="/"
+                        to="blog"
                         aria-label="Product pricing"
                         title="Product pricing"
                         class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                        Pricing
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                        to="/"
-                        aria-label="About us"
-                        title="About us"
-                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                        About us
+                        Blog
                         </Link>
                     </li>
                 </ul>
