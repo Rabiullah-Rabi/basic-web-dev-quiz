@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Topic = ({ topic }) => {
-    const { logo, name, total } = topic;
+    const { id,logo, name, total } = topic;
     return (
-        <Link to='../quizes'>
+        <Link to={`../quiz/${id}`}>
             <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
                 <img
                     src={logo}

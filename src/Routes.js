@@ -26,17 +26,20 @@ const router = createBrowserRouter([
             },
             {
                 path: 'statistics',
-                element:<Statistics></Statistics>
+                element: <Statistics></Statistics>,
+                loader: () => {
+                    return fetch('https://openapi.programming-hero.com/api/quiz');
+                }
             },
             {
                 path: 'blog',
                 element:<Blogs></Blogs>
             },
             {
-                path: 'quizes/:id',
+                path: 'quiz/:id',
                 element: <Quizzes></Quizzes>,
-                loader: (params) => {
-                    return fetch (`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+                loader: ({params}) => {
+                    return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
                 }
             }
         ]
