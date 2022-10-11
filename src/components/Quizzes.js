@@ -9,7 +9,7 @@ const Quizzes = () => {
         <div className='p-32 container mx-auto w-full md:w-3/5'>
             <h1 className='text-5xl mb-8'>{name}</h1>
             {
-                questions.map((quiz,index)=><Quiz quiz={quiz} key={quiz.id}></Quiz>)
+                questions.map((quiz,index)=><Quiz quiz={quiz} index={index} key={quiz.id}></Quiz>)
             }
         </div>
     );

@@ -21,7 +21,7 @@ const Quiz = ({ quiz,index }) => {
         <div>
             <div className='shadow-xl p-8 mb-8'>
                 <div className='flex justify-between'>
-                    <h1 className='text-3xl text-left'>{index} {question.split('<p>')[1].split('</p>')[0]}</h1>
+                    <h1 className='text-3xl text-left'>Quiz {index+1} : {question.split('<p>')[1].split('</p>')[0]}</h1>
                     <div>
                         <button onClick={notify}>
                         <FontAwesomeIcon icon={faEye} />
