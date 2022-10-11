@@ -9,22 +9,23 @@ const Quiz = ({ quiz }) => {
     const notify = () => toast(`${correctAnswer}`);
     return (
         <div>
-            <div>
-                <div>
+            <div className='shadow-xl p-8 mb-8'>
+                <div className='flex justify-between'>
                     <h1 className='text-3xl text-left'>{question.split('<p>')[1].split('</p>')[0]}</h1>
                     <div>
                         <button onClick={notify}>Correct Answer</button>
                         <ToastContainer />
                     </div>
                 </div>
-                
+                <div className='grid grid-cols-2 gap-4 mt-8'>
                 {
                     options.map(option =>
-                        <div>
-                            
+                        <div className='p-5 border cursor-pointer hover:bg-blue-100 duration-300'>
+                            <p>{option}</p>
                         </div>
                         )
                 }
+                </div>
             </div>
         </div>
     );
