@@ -1,5 +1,5 @@
-#Project name : BASIC WEB DEVELOPMENT QUIZ
-[Live link: ](https://facebook.github.io/create-react-app/docs/running-tests)
+# Project name : BASIC WEB DEVELOPMENT QUIZ 
+# [Live link: ](https://glittering-belekoy-c77b87.netlify.app/)
 
 ## CSS framework : [tailwindcss.com]https://tailwindcss.com/)
 ## Tailwind Components : [kitwind.io](https://kitwind.io/products/kometa/components/)
