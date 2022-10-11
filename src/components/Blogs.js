@@ -7,14 +7,15 @@ const Blogs = () => {
                 <h1 className='text-2xl font-bold'>What is the purpose of React Router</h1>
                 <p className='mt-4 ml-4'>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.
                     <br></br>
-                    There are 4 types of route components available with React Router:
-                    <ul className='list-disc ml-10'>
-                        <li>Route</li>
-                        <li>Default Route</li>
-                        <li>Not Found Route</li>
-                        <li>Redirect Route</li>
-                    </ul>
-                    <br></br>
+                There are 4 types of route components available with React Router:
+                </p>
+                <ul className='list-disc ml-10'>
+                    <li>Route</li>
+                    <li>Default Route</li>
+                    <li>Not Found Route</li>
+                    <li>Redirect Route</li>
+                </ul>
+                <p  className='mt-4 ml-4'>
                     <strong>Setting up the basics using npm:</strong>
                     <code>  $ npm install react-router --save </code>
                     <br></br>                   
