@@ -1,0 +1,25 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Topic = ({ topic }) => {
+    const { logo, name, total } = topic;
+    return (
+        <Link to='../quizes'>
+            <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                <img
+                    src={logo}
+                    className="object-contain w-full h-64 bg-blue-500"
+                    alt=""
+                />
+                <div className="p-5 border border-t-0">
+                    <h1 className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">{name}</h1>     
+                    <p className="mb-2 text-gray-700">
+                        Total Quiz : {total}
+                    </p>
+                </div>
+            </div>
+        </Link>
+    );
+};
+
+export default Topic;
