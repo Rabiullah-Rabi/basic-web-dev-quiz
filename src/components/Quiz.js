@@ -3,6 +3,8 @@ import React from 'react';
 import Options from './Options';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Quiz = ({ quiz }) => {
     const { question, options, correctAnswer } = quiz;
@@ -13,7 +15,9 @@ const Quiz = ({ quiz }) => {
                 <div className='flex justify-between'>
                     <h1 className='text-3xl text-left'>{question.split('<p>')[1].split('</p>')[0]}</h1>
                     <div>
-                        <button onClick={notify}>Correct Answer</button>
+                        <button onClick={notify}>
+                        <FontAwesomeIcon icon={faEye} />
+                        </button>
                         <ToastContainer />
                     </div>
                 </div>
