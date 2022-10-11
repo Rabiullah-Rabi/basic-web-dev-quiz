@@ -20,7 +20,7 @@ const Quiz = ({ quiz,index }) => {
         <div>
             <div className='shadow-xl p-8 mb-8'>
                 <div className='flex justify-between'>
-                    <h1 className='text-3xl text-left'>Quiz {index+1} : {question.split('<p>')[1].split('</p>')[0]}</h1>
+                    <h1 className='text-xl md:text-3xl text-left'>Quiz {index+1} : {question.split('<p>')[1].split('</p>')[0]}</h1>
                     <div>
                         <button onClick={notify}>
                         <FontAwesomeIcon icon={faEye} />
@@ -28,7 +28,7 @@ const Quiz = ({ quiz,index }) => {
                         <ToastContainer />
                     </div>
                 </div>
-                <div className='grid grid-cols-2 gap-4 mt-8'>
+                <div className='grid md:grid-cols-2 grid-cols- gap-4 mt-8'>
                 {
                         options.map(option =>
                             // <div className={!selected?'p-5 border cursor-pointer hover:bg-blue-100 duration-300': 'p-5 border cursor-pointer bg-blue-500 text-white duration-300'} key={option} onClick={() =>

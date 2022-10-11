@@ -21,6 +21,13 @@ const router = createBrowserRouter([
                 }
             },
             {
+                path: 'home',
+                element: <Home></Home>,
+                loader: () => {
+                    return fetch('https://openapi.programming-hero.com/api/quiz');
+                }
+            },
+            {
                 path: 'topics',
                 element: <Topics></Topics>,
                 loader: () => {

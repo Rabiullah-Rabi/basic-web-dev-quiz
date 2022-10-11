@@ -1,4 +1,3 @@
-import { tablePaginationClasses } from '@mui/material';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {
@@ -8,7 +7,8 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    Legend
+    Legend,
+    ResponsiveContainer
   } from "recharts";
 
 const Statistics = () => {
@@ -21,30 +21,32 @@ const Statistics = () => {
         }
     ));
     return (
-        <div className='container mx-auto'>
-            <LineChart className='mx-auto mt-28'
-                width={500}
-                height={300}
-                data={data}
-                margin={{
-                    top: 5,
-                    right: 30,
-                    left: 20,
-                    bottom: 5
-                }}
-                >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line
-                    type="monotone"
-                    dataKey="total_question"
-                    stroke="#8884d8"
-                    activeDot={{ r: 8 }}
-                />
-            </LineChart>
+        <div className='mx-auto'>
+            <ResponsiveContainer className={'mx-auto container'}
+                min-width={300}
+                height={250}>
+                <LineChart className='mx-auto mt-28'
+                    data={data}
+                    margin={{
+                        top: 5,
+                        right: 30,
+                        left: 20,
+                        bottom: 5
+                    }}
+                    >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Legend />
+                    <Line
+                        type="monotone"
+                        dataKey="total_question"
+                        stroke="#8884d8"
+                        activeDot={{ r: 8 }}
+                    />
+                </LineChart>
+            </ResponsiveContainer>
         </div>
     );
 };
