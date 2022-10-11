@@ -8,7 +8,7 @@ import {  faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Quiz = ({ quiz,index }) => {
     const { question, options, correctAnswer } = quiz;
-    const notify = () => toast(`${correctAnswer}`);
+    const notify = () => toast(`Correct Answer is : ${correctAnswer}`);
     const [selected, setSelected] = useState(false);
     const handleClick = ({ option }) => {
         const wrong = () => toast(<p className='text-red-500'>Your are wrong</p>);
