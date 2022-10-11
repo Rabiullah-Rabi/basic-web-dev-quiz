@@ -120,16 +120,6 @@ const Header = () => {
                   <ul className="space-y-4">
                     <li>
                       <Link
-                        to="topics"
-                        aria-label="topics"
-                        title="topics"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Topics
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
                         to="home"
                         aria-label="home"
                         title="home"
@@ -138,6 +128,17 @@ const Header = () => {
                         Home
                       </Link>
                     </li>
+                    <li>
+                      <Link
+                        to="topics"
+                        aria-label="topics"
+                        title="topics"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Topics
+                      </Link>
+                    </li>
+
                     <li>
                       <Link
                         to="statistics"
