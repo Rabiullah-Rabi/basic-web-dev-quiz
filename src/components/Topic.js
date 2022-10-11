@@ -8,7 +8,7 @@ const Topic = ({ topic }) => {
             <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
                 <img
                     src={logo}
-                    className="object-contain w-full h-64 bg-blue-500"
+                    className="object-contain w-full h-64 bg-blue-400"
                     alt=""
                 />
                 <div className="p-5 border border-t-0">
@@ -16,6 +16,9 @@ const Topic = ({ topic }) => {
                     <p className="mb-2 text-gray-700">
                         Total Quiz : {total}
                     </p>
+                    <Link to={`../quiz/${id}`}>
+                        <button className='px-5 py-2 bg-blue-500 text-white font-bold'>Start Quiz</button>
+                    </Link>
                 </div>
             </div>
         </Link>

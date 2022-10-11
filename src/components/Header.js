@@ -14,7 +14,7 @@ const Header = () => {
                 className="inline-flex items-center"
                 >
                 <img src={logo} className='h-12'></img>
-                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                <span className="ml-2 md:text-xl  text-sm font-bold tracking-wide text-gray-800 uppercase">
                 Basic Web development Quiz
                 </span>
                 </Link>
@@ -22,8 +22,8 @@ const Header = () => {
                     <li>
                         <Link
                         to="topics"
-                        aria-label="Our product"
-                        title="Our product"
+                        aria-label="topics"
+                        title="topics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                         Topics
@@ -32,8 +32,8 @@ const Header = () => {
                     <li>
                         <Link
                         to="statistics"
-                        aria-label="Our product"
-                        title="Our product"
+                        aria-label="statistics"
+                        title="statistics"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                         Statistics
@@ -42,8 +42,8 @@ const Header = () => {
                     <li>
                         <Link
                         to="blog"
-                        aria-label="Product pricing"
-                        title="Product pricing"
+                        aria-label="blog"
+                        title="blog"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                         Blog
@@ -74,32 +74,19 @@ const Header = () => {
                 </button>
                 {isMenuOpen && (
                     <div className="absolute top-0 left-0 w-full">
-                    <div className="p-5 bg-white border rounded shadow-sm">
+                    <div className=" bg-white shadow-sm">
                         <div className="flex items-center justify-between mb-4">
                         <div>
                             <Link
                             to="/"
-                            aria-label="Company"
-                            title="Company"
+                            aria-label="Basic Web development Quiz"
+                            title="Basic Web development Quiz"
                             className="inline-flex items-center"
                             >
-                            <svg
-                                className="w-8 text-deep-purple-accent-400"
-                                viewBox="0 0 24 24"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeMiterlimit="10"
-                                stroke="currentColor"
-                                fill="none"
-                            >
-                                <rect x="3" y="1" width="7" height="12" />
-                                <rect x="3" y="17" width="7" height="6" />
-                                <rect x="14" y="1" width="7" height="6" />
-                                <rect x="14" y="11" width="7" height="12" />
-                            </svg>
-                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                Company
+                            <img src={logo} className='h-12'></img>
+
+                            <span className="md:text-xl text-sm font-bold tracking-wide text-gray-800 uppercase">
+                            Basic Web development Quiz
                             </span>
                             </Link>
                         </div>
@@ -123,42 +110,32 @@ const Header = () => {
                         <ul className="space-y-4">
                             <li>
                             <Link
-                                to="/"
-                                aria-label="Our product"
-                                title="Our product"
+                                to="topics"
+                                aria-label="topics"
+                                title="topics"
                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
-                                Product
+                                Topics
                             </Link>
                             </li>
                             <li>
                             <Link
-                                to="/"
-                                aria-label="Our product"
-                                title="Our product"
+                                to="statistics"
+                                aria-label="statistics"
+                                title="statistics"
                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
-                                Features
+                                statistics
                             </Link>
                             </li>
                             <li>
                             <Link
-                                to="/"
-                                aria-label="Product pricing"
-                                title="Product pricing"
+                                to="blog"
+                                aria-label="blog"
+                                title="blog"
                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
-                                Pricing
-                            </Link>
-                            </li>
-                            <li>
-                            <Link
-                                to="/"
-                                aria-label="About us"
-                                title="About us"
-                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                            >
-                                About us
+                                blog
                             </Link>
                             </li>
                         </ul>
