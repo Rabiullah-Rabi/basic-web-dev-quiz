@@ -21,9 +21,9 @@ const Statistics = () => {
         }
     ));
     return (
-        <div className='mx-auto'>
-            <ResponsiveContainer className={'mx-auto container'}
-                min-width={300}
+        <div className='mx-auto container' >
+            <ResponsiveContainer className={'mx-auto'}
+                width={'80%'}
                 height={250}>
                 <LineChart className='mx-auto mt-28'
                     data={data}
